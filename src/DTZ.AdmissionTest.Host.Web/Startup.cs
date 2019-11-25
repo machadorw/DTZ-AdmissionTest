@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DTZ.AdmissionTest.Database.MySQL.Repositories;
+using DTZ.AdmissionTest.Platform.Entities;
+using DTZ.AdmissionTest.Platform.Interfaces;
+using DTZ.AdmissionTest.Platform.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace DTZ.AdmissionTest.Host.Web
 {
@@ -26,6 +23,18 @@ namespace DTZ.AdmissionTest.Host.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //Model
+            services.AddScoped<IAddresses, Addresses>();
+            services.AddScoped<IOrders, Orders>();
+            services.AddScoped<IProducts, Products>();
+            services.AddScoped<IUsers, Users>();
+
+            //Infra
+            services.AddScoped<IAddressesRepository, AddressesRepository>();
+            services.AddScoped<IOrdersRepository, OrdersRepository>();
+            services.AddScoped<IProductsRepository, ProductsRepository>();
+            services.AddScoped<IUsersRepository, UsersRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
