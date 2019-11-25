@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{3DE24605-B86F-44EC-A4CE-174984A3C522}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3BF17546-4596-49D3-B0BE-D17AF1D3705F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{FAA6E84F-CE6E-4F41-92DE-D9F7541B65F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{77B75C4C-71C8-4337-9A8D-BE5694815E82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{43621A97-7786-4F6D-A0D2-040EF8C025F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTZ.AdmissionTest.Host.Web", "src\DTZ.AdmissionTest.Host.Web\DTZ.AdmissionTest.Host.Web.csproj", "{E5076389-8241-4E35-93B8-D40F45D8F97B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTZ.AdmissionTest.Database.MySQL", "src\DTZ.AdmissionTest.Database.MySQL\DTZ.AdmissionTest.Database.MySQL.csproj", "{DEFB4F61-E085-4D17-A817-8EE0958EE76C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTZ.AdmissionTest.Platform", "src\DTZ.AdmissionTest.Platform\DTZ.AdmissionTest.Platform.csproj", "{32171B2A-B348-417C-8024-C9D9C885E3AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTZ.AdmissionTest.Tests", "src\DTZ.AdmissionTest.Tests\DTZ.AdmissionTest.Tests.csproj", "{1EA28507-7645-475F-BA5F-7019D5FEE881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5076389-8241-4E35-93B8-D40F45D8F97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5076389-8241-4E35-93B8-D40F45D8F97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5076389-8241-4E35-93B8-D40F45D8F97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5076389-8241-4E35-93B8-D40F45D8F97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFB4F61-E085-4D17-A817-8EE0958EE76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFB4F61-E085-4D17-A817-8EE0958EE76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFB4F61-E085-4D17-A817-8EE0958EE76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFB4F61-E085-4D17-A817-8EE0958EE76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32171B2A-B348-417C-8024-C9D9C885E3AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32171B2A-B348-417C-8024-C9D9C885E3AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32171B2A-B348-417C-8024-C9D9C885E3AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32171B2A-B348-417C-8024-C9D9C885E3AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EA28507-7645-475F-BA5F-7019D5FEE881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA28507-7645-475F-BA5F-7019D5FEE881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA28507-7645-475F-BA5F-7019D5FEE881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA28507-7645-475F-BA5F-7019D5FEE881}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43621A97-7786-4F6D-A0D2-040EF8C025F4} = {3BF17546-4596-49D3-B0BE-D17AF1D3705F}
+		{E5076389-8241-4E35-93B8-D40F45D8F97B} = {3DE24605-B86F-44EC-A4CE-174984A3C522}
+		{DEFB4F61-E085-4D17-A817-8EE0958EE76C} = {43621A97-7786-4F6D-A0D2-040EF8C025F4}
+		{32171B2A-B348-417C-8024-C9D9C885E3AC} = {FAA6E84F-CE6E-4F41-92DE-D9F7541B65F5}
+		{1EA28507-7645-475F-BA5F-7019D5FEE881} = {77B75C4C-71C8-4337-9A8D-BE5694815E82}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51FB8D58-9E06-4DB0-A1DC-FD7919CFB237}
+	EndGlobalSection
+EndGlobal
